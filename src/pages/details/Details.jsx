@@ -32,17 +32,13 @@ const Details = () => {
                     <Card.Text>Population : <span className='fw-bold'>{population}</span> </Card.Text>
                     <Card.Text>
                       Currencies:
-                      {currencies && Object.values(currencies).length > 0
-                        ? Object.values(currencies)
-                          .map((curr) => curr.name)
-                          .join(", ")
-                          .split(":")
-                          .map((el, i) =>
-                            i === 0 ? <span key={i} className="fw-bold">{` ${el}`}</span> : `: ${el}`
-                          )
+                      {Object.values(currencies).length > 0
+                        ? Object.values(currencies).map((curr) => curr.name).join(", ")
+                          .split("*")
+                          .map((el, i) =><span key={i} className="fw-bold">{` ${el}`}</span>)
                         : "N/A"}
                     </Card.Text>
-                    {capital && capital.length > 0 && (
+                    {capital.length > 0 && (
                       <Card.Text>Capital: <span className='fw-bold'>{capital[0]}</span> </Card.Text>
                     )}
                     <Card.Text>Region: <span className='fw-bold'>{region}</span> </Card.Text>
