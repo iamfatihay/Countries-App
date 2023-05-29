@@ -56,7 +56,7 @@ const Home = () => {
                 <Card.Img variant="top" src={flags.png}  onClick={() => handleDetailsClick(name.common)} /> 
                 <Card.Body> 
                   <Card.Title>{name.common}</Card.Title> 
-                  <Button variant="danger" onClick={handleDetailsClick}> 
+                  <Button variant="danger" onClick={() => handleDetailsClick(name.common)}> 
                     DETAYLAR 
                   </Button> 
                 </Card.Body> 
