@@ -53,7 +53,7 @@ Welcome to the "Countries App"! This application is designed to provide users wi
 
 <div >
 <img width="660px" src="./countries.gif"/>
-<img width="160px" src="./countries1.gif"/>
+<img width="168px" src="./countries1.gif"/>
 </div>
 
 ## Technologies and Libraries
