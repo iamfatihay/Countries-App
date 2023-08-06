@@ -1,72 +1,98 @@
-## https://de-router-countries-react-app-fay.netlify.app/
+# Countries App
 
-# Getting Started with Create React App
+## Live Link: https://countries-react-app-fay.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Welcome to the "Countries App"! This application is designed to provide users with easy access to country information through a search feature. With this app, users can explore and retrieve essential details about various countries, including their locations on the map. Discover fascinating facts and explore the world at your fingertips. Happy exploring!
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- <span style="font-size: larger;">**Search Functionality**</span>: Easily search and find information about specific countries using the search bar.
+- <span style="font-size: larger;">**Country Details**</span>: Access comprehensive details about each country, including its capital, population, area, languages spoken, and more.
+- <span style="font-size: larger;">**User-Friendly Interface**</span>: Enjoy a smooth and intuitive user interface for seamless navigation and information retrieval.
+- <span style="font-size: larger;">**Responsive Design**</span>: Enjoy a smooth and intuitive user experience on various devices, including desktops, tablets, and mobile phones.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Skeleton
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+.
+├── README.md
+├── countries.gif
+├── countries1.gif
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── robots.txt
+└── src
+    ├── App.css
+    ├── App.js
+    ├── components
+    │   ├── footer
+    │   │   ├── Footer.css
+    │   │   └── Footer.jsx
+    │   └── navbar
+    │       └── MyNavbar.jsx
+    ├── img
+    │   └── [Your files...]
+    ├── index.js
+    └── pages
+        ├── about
+        │   └── About.jsx
+        ├── details
+        │   └── Details.jsx
+        ├── home
+        │   └── Home.jsx
+        └── notFound
+            └── NotFound.jsx
+```
 
-### `npm test`
+## Expected Outcomes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div >
+<img width="660px" src="./countries.gif"/>
+<img width="160px" src="./countries1.gif"/>
+</div>
 
-### `npm run build`
+## Technologies and Libraries
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- <span style="font-size: larger;">**React.js**</span>: A powerful JavaScript library for building interactive user interfaces.
+- <span style="font-size: larger;">**RESTful API**</span>: Utilized to fetch country data from external sources and provide real-time information.
+- <span style="font-size: larger;">**Axios**</span>: A popular HTTP client for making API requests and handling responses.
+- <span style="font-size: larger;">**Bootstrap**</span>: A highly customizable CSS framework for creating stunning designs with minimal effort.
+- <span style="font-size: larger;">**React Router**</span>: A popular routing library for React applications, allowing for dynamic and intuitive navigation between different pages within the application.
+- <span style="font-size: larger;">**Font Awesome:**</span>: Provides a wide range of icons used for visual elements.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application on your local machine, follow these steps:
 
-### `npm run eject`
+1. Clone the project to your computer:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   git clone https://github.com/iamfatihay/Countries-App.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Open your terminal and navigate to the project directory.
+   ```
+   cd countries-app
+   ```
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+4. Start the application:
+   ```
+   npm start
+   ```
+5. Open your web browser and visit **http://localhost:3000** to explore the Countries Application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribution
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Welcome contributions to enhance the Countries Application! If you find any bugs or have ideas for improvements, please open an issue or submit a pull request. I appreciate your valuable input!
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Countries Application is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
