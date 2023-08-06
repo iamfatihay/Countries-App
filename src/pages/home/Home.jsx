@@ -48,12 +48,12 @@ const Home = () => {
 
   return (
     <Container className="text-center mt-4 d-flex flex-column align-items-center" >
-      <input className='input-group-text  w-50' style={{ marginTop: "6rem" }} type="text" placeholder="Search countries..." onChange={handleSearchChange} autoFocus />
-      <Row className="g-3 mt-3" >
+      <input className='input-group-text w-50' style={{ marginTop: "6rem" }} type="text" placeholder="Search countries..." onChange={handleSearchChange} autoFocus />
+      <Row className="mt-3 m-auto" >
         {paginatedUlkeler.map(({ flags, name }) => {
           return (
-            <Col className='m-auto' sm={12} md={6} lg={3} key={name.common}>
-              <Card style={{ width: "15rem" }}>
+            <Col className='mt-3 m-auto d-flex justify-content-center align-items-center'  key={name.common}>
+              <Card style={{ width: "17rem" }}>
                 <Card.Img variant="top" src={flags.png} onClick={() => handleDetailsClick(name.common)} />
                 <Card.Body>
                   <Card.Title>{name.common}</Card.Title>
