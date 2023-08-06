@@ -60,7 +60,7 @@ Welcome to the "Countries App"! This application is designed to provide users wi
 
 - <span style="font-size: larger;">**React.js**</span>: A powerful JavaScript library for building interactive user interfaces.
 - <span style="font-size: larger;">**RESTful API**</span>: Utilized to fetch country data from external sources and provide real-time information.
-- <span style="font-size: larger;">**Axios**</span>: A popular HTTP client for making API requests and handling responses.
+- <span style="font-size: larger;">**Fetch API**</span>: A modern web API used to make network requests and handle responses, such as fetching country data from APIs.
 - <span style="font-size: larger;">**Bootstrap**</span>: A highly customizable CSS framework for creating stunning designs with minimal effort.
 - <span style="font-size: larger;">**React Router**</span>: A popular routing library for React applications, allowing for dynamic and intuitive navigation between different pages within the application.
 - <span style="font-size: larger;">**Font Awesome:**</span>: Provides a wide range of icons used for visual elements.
