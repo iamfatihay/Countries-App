@@ -1,98 +1,169 @@
-# Countries App
+# 🌍 Countries React App
 
-## Live Link: https://countries-react-app-fay.netlify.app/
+Modern and user-friendly country information application. Provides detailed information about world countries using REST Countries API.
 
-## Description
+## ✨ Features
 
-Welcome to the "Countries App"! This application is designed to provide users with easy access to country information through a search feature. With this app, users can explore and retrieve essential details about various countries, including their locations on the map. Discover fascinating facts and explore the world at your fingertips. Happy exploring!
+-   🔍 **Country Search**: Search by country names
+-   📱 **Responsive Design**: Mobile and desktop compatible
+-   🌐 **Detailed Information**: Capital, population, currency, language information for each country
+-   🗺️ **Google Maps Integration**: View countries on Google Maps
+-   ⚡ **Modern React**: React 18, React Router 6, Bootstrap 5
+-   🎨 **Beautiful UI**: Modern interface with React Bootstrap
+-   🌙 **Dark/Light Theme**: Theme switching capability
+-   🎯 **Modern Design**: Gradient buttons, shadows, animations
 
-## Features
+## 🚀 Installation
 
-- <span style="font-size: larger;">**Search Functionality**</span>: Easily search and find information about specific countries using the search bar.
-- <span style="font-size: larger;">**Country Details**</span>: Access comprehensive details about each country, including its capital, population, area, languages spoken, and more.
-- <span style="font-size: larger;">**User-Friendly Interface**</span>: Enjoy a smooth and intuitive user interface for seamless navigation and information retrieval.
-- <span style="font-size: larger;">**Responsive Design**</span>: Enjoy a smooth and intuitive user experience on various devices, including desktops, tablets, and mobile phones.
+1. Clone the project:
 
-## Project Skeleton
-
-```
-.
-├── README.md
-├── countries.gif
-├── countries1.gif
-├── package-lock.json
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── robots.txt
-└── src
-    ├── App.css
-    ├── App.js
-    ├── components
-    │   ├── footer
-    │   │   ├── Footer.css
-    │   │   └── Footer.jsx
-    │   └── navbar
-    │       └── MyNavbar.jsx
-    ├── img
-    │   └── [Your files...]
-    ├── index.js
-    └── pages
-        ├── about
-        │   └── About.jsx
-        ├── details
-        │   └── Details.jsx
-        ├── home
-        │   └── Home.jsx
-        └── notFound
-            └── NotFound.jsx
+```bash
+git clone <repository-url>
+cd countries-react-app
 ```
 
-## Expected Outcomes
+2. Install dependencies:
 
-<div >
-<img width="660px" src="./countries.gif"/>
-<img width="168px" src="./countries1.gif"/>
-</div>
+```bash
+npm install
+```
 
-## Technologies and Libraries
+3. Start the application:
 
-- <span style="font-size: larger;">**React.js**</span>: A powerful JavaScript library for building interactive user interfaces.
-- <span style="font-size: larger;">**RESTful API**</span>: Utilized to fetch country data from external sources and provide real-time information.
-- <span style="font-size: larger;">**Fetch API**</span>: A modern web API used to make network requests and handle responses, such as fetching country data from APIs.
-- <span style="font-size: larger;">**Bootstrap**</span>: A highly customizable CSS framework for creating stunning designs with minimal effort.
-- <span style="font-size: larger;">**React Router**</span>: A popular routing library for React applications, allowing for dynamic and intuitive navigation between different pages within the application.
-- <span style="font-size: larger;">**Font Awesome:**</span>: Provides a wide range of icons used for visual elements.
+```bash
+npm start
+```
 
-## Getting Started
+4. Open `http://localhost:3000` in your browser.
 
-To run the application on your local machine, follow these steps:
+## 🛠️ Technologies
 
-1. Clone the project to your computer:
+-   **React 18.2.0** - UI framework
+-   **React Router 6.21.3** - Page routing
+-   **Bootstrap 5.3.3** - CSS framework
+-   **React Bootstrap 2.10.0** - Bootstrap React components
+-   **React Icons 5.0.1** - Icons
+-   **REST Countries API** - Country data
 
-   ```
-   git clone https://github.com/iamfatihay/Countries-App.git
-   ```
+## 📁 Project Structure
 
-2. Open your terminal and navigate to the project directory.
-   ```
-   cd countries-app
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-4. Start the application:
-   ```
-   npm start
-   ```
-5. Open your web browser and visit **http://localhost:3000** to explore the Countries Application.
+```
+src/
+├── components/
+│   ├── footer/
+│   └── navbar/
+├── contexts/
+│   └── ThemeContext.js
+├── pages/
+│   ├── home/
+│   ├── about/
+│   ├── details/
+│   └── notFound/
+├── styles/
+│   └── themes.css
+├── App.js
+└── index.js
+```
 
-## Contribution
+## 🔧 API Usage
 
-Welcome contributions to enhance the Countries Application! If you find any bugs or have ideas for improvements, please open an issue or submit a pull request. I appreciate your valuable input!
+The application uses [REST Countries API](https://restcountries.com/):
 
-## License
+-   All countries: `https://restcountries.com/v3.1/all`
+-   Country details: `https://restcountries.com/v3.1/name/{countryName}`
 
-The Countries Application is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+## 🎯 Features
+
+### Home Page
+
+-   List of all countries
+-   Search functionality
+-   Pagination (250 countries display)
+-   Scroll to top button
+
+### Details Page
+
+-   Country flag
+-   Turkish translation
+-   Population information
+-   Currencies
+-   Capital
+-   Region
+-   Spoken languages
+-   Google Maps link
+
+## 🎨 Theme System
+
+### Light Theme
+
+-   **Primary**: `#0d6efd` (Blue)
+-   **Background**: `#ffffff` (White)
+-   **Cards**: `#ffffff` (White)
+-   **Text**: `#212529` (Dark gray)
+
+### Dark Theme
+
+-   **Primary**: `#238636` (Green)
+-   **Background**: `#0d1117` (Very dark)
+-   **Cards**: `#21262d` (Dark gray)
+-   **Text**: `#f0f6fc` (Light)
+
+## 🐛 Bug Fixes
+
+### v2.0.0 Updates
+
+-   ✅ Added manifest.json file
+-   ✅ Improved API error handling
+-   ✅ Added loading and error states
+-   ✅ Fixed filter error
+-   ✅ Updated dependencies
+-   ✅ Improved responsive design
+-   ✅ English interface support
+-   ✅ Modern color scheme with dark/light theme
+-   ✅ Updated to React 18 createRoot API
+-   ✅ Fixed React Router v7 warnings
+-   ✅ Optimized API requests
+
+## 📱 Responsive Design
+
+The application works perfectly on all devices:
+
+-   📱 Mobile (320px+)
+-   📱 Tablet (768px+)
+-   💻 Desktop (1024px+)
+
+## 🚀 Deployment
+
+### Netlify
+
+```bash
+npm run build
+# Upload build folder to Netlify
+```
+
+### Vercel
+
+```bash
+npm run build
+# Deploy with Vercel CLI
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Developer
+
+Fatih Ay - [GitHub](https://github.com/fatih-ay)
+
+---
+
+⭐ If you liked this project, don't forget to give it a star!
